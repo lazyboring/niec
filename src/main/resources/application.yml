@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: niec
+  spring:
+    thymeleaf:
+      cache: false
+      encoding: UTF-8
+      check-template-location: true
+      mode: HTML5
+      prefix: classpath:/templates
+      suffix: .html
+      servlet:
+        content-type: text/html
+
+  profiles:
+    active: dev
+
+
+
+# tomcat ≈‰÷√
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 10086
